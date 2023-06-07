@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-# 6-print_comb3.py
 
-for digit1 in range(0, 10):
-    for digit2 in range(digit1 + 1, 10):
-        if digit1 == 8 and digit2 == 9:
+for k in range(0, 10):
+    for p in range(1, 10):
+        if k >= p:
+            continue
+        elif k == 8 and p == 9:
+            print("{}{}".format(k, p))
+        else:
+            print("{}{}, ".format(k, p), end="")

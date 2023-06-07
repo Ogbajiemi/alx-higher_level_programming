@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-# 8-uppercase.py
-def uppercase(str):
 
-for l in str:
-    if ord(l) >= 97 and ord(l) <= 122:
-        l = chr(ord(l) - 32)
-        print("{}".format(l), end="")
-        print("")
+def uppercase(str):
+    for r in range(len(str)):
+        var = ord(str[r])
+        if var >= 97 and var <= 122:
+            var = var - 32
+        print("{}".format(chr(var)), end="")
+    print()
